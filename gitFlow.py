@@ -2,9 +2,9 @@
 
 import calculadora as calc
     
-def calcsuma():
-    # aqui se va calcular la suma
-    return
+def calcsuma(n1,n2):
+    sumar=calc.Sumar(n1,n2)
+    return sumar
 
 
 def calculadora_restando():
@@ -18,10 +18,10 @@ def iniciar_aplicacion():
     if(opcion == 1):
         n1=int(input("digite el primer numero"))
         n2=int(input("digite el segundo numero"))
-
-        #mandar a llamar la funcion
+        print("el resultado de la suma es: ", calcsuma(n1, n2))
     else:
         n1=int(input("digite el primer numero"))
         n2=int(input("digite el segundo numero"))
 
         #mandar a llamar la funcion
+iniciar_aplicacion()
