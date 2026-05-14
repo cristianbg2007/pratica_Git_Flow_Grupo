@@ -7,9 +7,9 @@ def calcsuma():
     return
 
 
-def calculadora_restando():
-    #se va calcular la resta
-    return
+def calculadora_restando(n1, n2):
+    restar=calc.restar(n1, n2)
+    return restar
 
 
 def iniciar_aplicacion():
@@ -23,5 +23,5 @@ def iniciar_aplicacion():
     else:
         n1=int(input("digite el primer numero"))
         n2=int(input("digite el segundo numero"))
-
-        #mandar a llamar la funcion
+        print("el resultado de la resta es: ", calculadora_restando(n1, n2))
+iniciar_aplicacion()
